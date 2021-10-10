@@ -22,7 +22,7 @@ def add_indexes(numbers):
     #     numbers[num] = numbers[num] + num
     # return numbers
 #  list comprehension
-return [numbers[num] += num for num in range(len(numbers))]
+    return [num + numbers[num] for num in range(len(numbers))]
 # [num + numbers[num]]
 
 
