@@ -19,11 +19,13 @@ Notes:
 
 def multiply_nums(nums):
     convertNum = nums.split(', ')
-    integers = [int(i) for i in convertNum]
-    result = 1
-    for x in integers:
-        result = result * x
-    return result
+    # integers = [int(i) for i in convertNum]
+    # result = 1
+    # for x in integers:
+    #     result = result * x
+    # return result
+    nums = list(map(int, convertNum))
+    # you can loop through the map and apply the product to it
 
 print(multiply_nums("2, 3"))
 print(multiply_nums("1, 2, 3, 4"))
