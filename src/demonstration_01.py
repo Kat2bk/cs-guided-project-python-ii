@@ -16,9 +16,10 @@ Notes:
 
 
 def last(a, n):
-    if (abs(n) > len(a)):
+    # if (abs(n) > len(a)):
+    if n > len(a):
         return "Invalid"
-    elif n == 0:
+    elif n < 1:
         return []
     else:
         return a[-n :]
