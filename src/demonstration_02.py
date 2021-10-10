@@ -18,9 +18,12 @@ Notes:
 #  and add index to item
 
 def add_indexes(numbers):
-    for num in range(len(numbers)):
-        numbers[num] = numbers[num] + num
-    return numbers
+    # for num in range(len(numbers)):
+    #     numbers[num] = numbers[num] + num
+    # return numbers
+#  list comprehension
+return [numbers[num] += num for num in range(len(numbers))]
+# [num + numbers[num]]
 
 
 print(add_indexes([0, 0, 0, 0, 0]))
