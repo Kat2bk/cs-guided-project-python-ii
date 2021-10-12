@@ -12,6 +12,9 @@ Examples:
 - get_middle("testing") -> "t"
 - get_middle("middle") -> "dd"
 - get_middle("A") -> "A"
+
+# finding the middle means looping through
+# 
 """
 def get_middle(input_str):
     # Your code here
