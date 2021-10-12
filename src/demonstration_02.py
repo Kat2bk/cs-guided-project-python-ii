@@ -13,8 +13,19 @@ Examples:
 Notes:
 - The input list will only contain integers.
 """
-
+# we want to add the index number to each element in the list
+# we want to loop through index and items using emmuerate
+#  and add index to item
 
 def add_indexes(numbers):
-    # Your code here
+    # for num in range(len(numbers)):
+    #     numbers[num] = numbers[num] + num
+    # return numbers
+#  list comprehension
+    return [num + numbers[num] for num in range(len(numbers))]
+# [num + numbers[num]]
 
+
+print(add_indexes([0, 0, 0, 0, 0]))
+print(add_indexes([1, 2, 3, 4, 5]))
+print(add_indexes([5, 4, 3, 2, 1]))

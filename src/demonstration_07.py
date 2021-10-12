@@ -12,6 +12,25 @@ Examples:
 - repeat_it("RqaEzty") -> "R-Qq-Aaa-Eeee-Zzzzz-Tttttt-Yyyyyyy"
 - repeat_it("cwAt") -> "C-Ww-Aaa-Tttt"
 """
-def repeat_it(input_str):
-    # Your code here
 
+# going to need to use the index to increase by its value to element
+
+# key words: repeat(), replace(), .split()
+# we need to split the letters
+# for loop, repeat by index + 1, replace space with dashes
+# we have to change string into int then add by index
+
+["abcd"]
+["a", "b", "c", "d"]
+["a", "bb", "ccc", "dddd"]
+# [0] [1] [2] [3]
+
+def repeat_it(input_str):
+    splitLst = list(input_str)
+    # result = [ele + ele[idx] for idx, ele in enumerate(splitLst)]
+    for ele in range(len(splitLst)):
+       result = ele + splitLst[ele]
+       print(result)
+    # return "".join(result)
+
+print(repeat_it("abcd"))

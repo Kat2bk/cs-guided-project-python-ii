@@ -17,6 +17,8 @@ Examples:
 - emotify("Make me grin") ➞ "Make me :)"
 - emotify("Make me sad") ➞ "Make me :("
 
+# we need to
+
 Notes:
 - The sentence always starts with "Make me".
 - Try to solve this without using conditional statements like if/else.
@@ -24,5 +26,8 @@ Notes:
 
 
 def emotify(txt):
-    # Your code here
+   return txt.replace("smile", ":D").replace("grin", ":)").replace("sad", ":(")
 
+print(emotify("Make me smile"))
+print(emotify("Make me grin"))
+print(emotify("Make me sad"))
