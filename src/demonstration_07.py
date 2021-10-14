@@ -27,10 +27,9 @@ Examples:
 
 def repeat_it(input_str):
     splitLst = list(input_str)
-    # result = [ele + ele[idx] for idx, ele in enumerate(splitLst)]
-    for ele in range(len(splitLst)):
-       result = ele + splitLst[ele]
-       print(result)
-    # return "".join(result)
+    loopingIdx = [splitLst[idx] * (idx + 1) for idx, ele in enumerate(splitLst)]
+    replaceList = [i.capitalize() for i in loopingIdx]
+    result = "-".join(replaceList)
+    return result
 
 print(repeat_it("abcd"))
