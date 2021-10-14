@@ -33,3 +33,4 @@ def repeat_it(input_str):
     return result
 
 print(repeat_it("abcd"))
+print(repeat_it("RqaEzty"))

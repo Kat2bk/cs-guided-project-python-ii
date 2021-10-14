@@ -15,7 +15,12 @@ Notes:
 - The return string must be two numbers separated by a single space, and
 the maximum number is first.
 """
-def max_and_min(input_str):
-    # Your code here
 
+# going to have to loop through it
+#max and min
+# two list comprehensions?
+# return f"{max} {min}"
+def max_and_min(input_str):
+    biggest = [max(i) for i in list(input_str)]
+    print(biggest)
 
