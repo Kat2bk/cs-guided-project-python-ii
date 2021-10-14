@@ -21,6 +21,10 @@ the maximum number is first.
 # two list comprehensions?
 # return f"{max} {min}"
 def max_and_min(input_str):
-    biggest = [max(i) for i in list(input_str)]
-    print(biggest)
+    convertInt = [int(num) for num in input_str.split()]
+    biggest = max(convertInt)
+    smallest = min(convertInt)
+    return f"{biggest} {smallest}"
+
+print(max_and_min("1 2 3 4 5"))
 
